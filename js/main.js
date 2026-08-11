@@ -10,10 +10,14 @@ function getFetch(){
       .then(data => {
         
         let randomMon = data.data[Math.floor(Math.random() * data.data.length)];
-        console.log(randomMon);
+        // console.log(randomMon);
+
         document.querySelector('h2').innerText = randomMon.name;
         document.querySelector('img').src = randomMon.image;
         document.querySelector('p').innerText = randomMon.description;
+
+        const card = document.getElementById('card');
+        card.classList.add('card');
       })
       .catch(err => {
           console.log(`error ${err}`)
