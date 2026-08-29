@@ -3,7 +3,7 @@ document.querySelector('button').addEventListener('click', getFetch)
 
 function getFetch(){
   
-  const url = `https://api.hyrule-compendium.com/api/v3/compendium/category/monsters`;
+  const url = `https://api.hyrule-compendium.com/api/v3/compendium/category/monsters?game=2`;
 
   fetch(url)
       .then(res => res.json()) // parse response as JSON

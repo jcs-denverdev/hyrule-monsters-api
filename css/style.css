@@ -10,24 +10,57 @@
 /******************************************
 /* LAYOUT
 /*******************************************/
+button {
+    padding: 15px;
+    font-size: 1.1em;
+    border-radius: 15px;
+    box-shadow: 5px 5px;
+}
+
+button:hover {
+    background-color: rgba(100, 162, 188, 0.4);
+    transition-duration: .5s;
+    cursor: pointer;
+}
+
+button:active {
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+h2 {
+    text-transform: capitalize;
+}
+
 img {
-  display: block;
-  margin: 0 auto;
-  
+    display: block;
+    margin: 0 auto;
+}
+
+#card p {
+    font-size: 1.4rem;
 }
 
 .container {
-  text-align: center;
-  margin-bottom: 20px;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-.card {
-  width: 45%;
-  margin: 0 auto;
-  text-align: center;
-  border: 1px solid rgb(143, 135, 135);
-  box-shadow: 5px 6px rgba(0, 0, 0, 0.424);
-  border-radius: 10px;
-  margin-bottom: 30px;
-  padding: 20px;
+#card {
+    width: 45%;
+    margin: 0 auto;
+    text-align: center;
+    border: 1px solid rgb(143, 135, 135);
+    box-shadow: 5px 6px rgba(0, 0, 0, 0.424);
+    border-radius: 10px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+
+#card div {
+    background-color: #049;
+    opacity: .5;
+    height: 350px;
+    border-radius: 10px;
 }
